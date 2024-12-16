@@ -52,7 +52,7 @@ const DeleteButton = ({ bookId }) => {
     };
 
     return (
-        <button className="flex items-center text-red-500 hover:text-red-700 font-medium transition-colors" onClick={handleDelete}>
+        <button className="flex items-center text-color-red hover:text-color-orangered font-medium transition-colors" onClick={handleDelete}>
             <FaTrash className="mr-2" /> Delete
         </button>
     );

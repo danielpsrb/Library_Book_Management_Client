@@ -7,7 +7,7 @@ const EditButton = ({ bookId }) => {
     return (
         <Link
             href={`/book/edit/${bookId}`}
-            className="flex items-center text-blue-500 hover:text-blue-700 font-medium transition-colors"
+            className="flex items-center text-color-blue hover:text-color-deepskyblue font-medium transition-colors"
         >
             <FaEdit className="mr-2" /> Edit
         </Link>

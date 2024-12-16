@@ -1,16 +1,8 @@
-import localFont from "next/font/local";
+import { Gabarito } from 'next/font/google'
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const gabarito = Gabarito({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: "Library Book Management",
@@ -21,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}
+        className={`${gabarito.className} bg-color-dark`} suppressHydrationWarning={true}
       >
         {children}
       </body>
